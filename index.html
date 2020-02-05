@@ -6,12 +6,14 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="main.js"></script>
   </head>
   <body class="text-center">
     <form action="https://smartforms.dev/submit/5d72bc1bf5eed62ce3daa13c" method="POST" class="form-signin">
       <img class="mb-4" src="shield.png" alt="" width="128" height="128">
-      <div class="g-recaptcha" data-sitekey="6Lc7-9cSAAAAAIiCLFz8XeM9JNqP6ql6C20vSFQl"></div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Continue</button>
+      <div class="g-recaptcha" data-sitekey="6Lc7-9cSAAAAAIiCLFz8XeM9JNqP6ql6C20vSFQl" data-callback="enableBtn"></div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit" id="button1">Continue</button>
     </form>
   </body>
 </html>
